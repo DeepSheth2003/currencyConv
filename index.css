@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(315deg, #ffffff, #d7e1ec);
+}
+
+.main{
+    background: #ebeef1;
+    box-shadow: -20px -20px 20px -1px rgba(10, 99, 169, 0.16),
+    20px 20px 20px -1px rgba(255, 255, 255, 0.70),
+    inset -20px -20px 20px -1px rgba(10, 99, 169, 0.16), 
+    inset 20px 20px 20px -1px rgba(255, 255, 255, 0.70);
+    padding: 2rem;
+    border-radius: 10px;
+    min-height: 400px;
+    width: 350px;
+    transition: all 0.2s linear;
+}
+
+.main:hover{
+    box-shadow: 20px 20px 20px -1px rgba(10, 99, 169, 0.16),
+    -20px -20px 20px -1px rgba(255, 255, 255, 0.70),
+    inset 20px 20px 20px -1px rgba(10, 99, 169, 0.16), 
+    inset -20px -20px 20px -1px rgba(255, 255, 255, 0.70);
+}
+
+.amount{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form{
+    margin: 2rem 0 1rem 0;
+}
+
+form select,button,input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+form input{
+    border: 1px solid lightgray;
+    font-size: 1rem;
+    height: 2.2rem;
+    padding-left: 10px;
+}
+
+.dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.2rem;
+}
+
+.ft{
+    padding-bottom: 5px;
+}
+
+form select{
+    background-color: transparent;
+    height: 22px;
+}
+
+.select-container img{
+    max-width: 2rem;
+}
+
+.select-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 0 5px 0 5px;
+}
+
+.select-container:hover select{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dropdown i{
+    margin-top: 1.4rem;
+    padding: 6px;
+    border-radius: 5px;
+}
+.dropdown i:hover{
+    border: 1px solid lightgray;
+    cursor: pointer;
+}
+
+.message{
+    margin: 2rem 0 2rem 0;
+    font-size: 0.92rem;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+form button{
+    height: 2.2rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    background-color: black;
+    color: white;
+}
