@@ -90,3 +90,17 @@ icon.addEventListener('click',() => {
     }
 
 });
+
+const github = document.getElementById('github');
+const email = document.getElementById('email');
+const link = document.getElementById('link');
+
+github.addEventListener("click",()=>{
+    window.open('https://github.com/DeepSheth2003','_blank');
+});
+email.addEventListener("click",()=>{
+    window.open('mailto:deepsheth56@gmail.com','_blank');
+});
+link.addEventListener("click",()=>{
+    window.open('https://www.linkedin.com/in/deep-sheth-378164344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app','_blank');
+});

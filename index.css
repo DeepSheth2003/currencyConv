@@ -7,7 +7,8 @@
 body{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
     height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: linear-gradient(315deg, #ffffff, #d7e1ec);
@@ -24,6 +25,21 @@ body{
     min-height: 400px;
     width: 350px;
     transition: all 0.2s linear;
+    margin-top: 130px;
+}
+
+.self{
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.self div:hover{
+    cursor: pointer;
+    color: black;
 }
 
 .main:hover{
@@ -115,4 +131,21 @@ form button{
     font-size: 0.9rem;
     background-color: black;
     color: white;
+}
+
+@media screen and (max-width: 768px){
+.self{
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.self div:hover{
+    cursor: pointer;
+    color: black;
+}
 }
